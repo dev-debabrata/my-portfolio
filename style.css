@@ -202,3 +202,62 @@ section {
   line-height: 1.4;
   margin-bottom: 4rem;
 }
+
+/* .skills img {
+  width: 10rem;
+} */
+
+.section-title {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+/* .skills-info {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+} */
+
+.skills-info {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-gap: 2rem 4rem;
+  padding: 1rem 80px;
+  font-size: 1.2rem;
+}
+
+.skills-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.skills-title img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff4e6;
+  padding: 1rem;
+}
+
+.skills-title h3 {
+  margin: 0.5rem;
+}

@@ -84,6 +84,7 @@ li a:hover:before {
 #menu-icon {
   font-size: 2rem;
   display: none;
+  cursor: pointer;
 }
 
 section {
@@ -459,7 +460,7 @@ footer {
     margin-top: 1.5rem;
     padding: 1rem;
   }
-  .nav-links .active {
+  .nav-links.active {
     display: block;
   }
   header {

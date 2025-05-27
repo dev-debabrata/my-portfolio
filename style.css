@@ -8,6 +8,7 @@
   list-style: none;
 }
 
+/*----------Nav bar---------*/
 header {
   position: fixed;
   top: 1rem;
@@ -87,6 +88,7 @@ li a:hover:before {
   cursor: pointer;
 }
 
+/*----------Home Section----------*/
 section {
   min-height: 100vh;
   padding: 8rem 12%;
@@ -173,13 +175,21 @@ section {
   transform: scale(1.1);
 }
 
-.about {
+/* ----------About section---------- */
+.about-info {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8rem;
+  gap: 15rem;
+  font-size: 3rem;
+  margin-bottom: 2rem;
 }
-
+.section-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
 .about-img img {
   width: 24vw;
   border-radius: 3rem;
@@ -187,6 +197,8 @@ section {
 
 .about-text h2 {
   font-size: 60px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .about-text h4 {
@@ -194,7 +206,7 @@ section {
   font-weight: 600;
   color: black;
   line-height: 1.7;
-  margin: 15px 0 30px;
+  margin: 15px 0 5px;
 }
 
 .about-text p {
@@ -204,28 +216,7 @@ section {
   margin-bottom: 4rem;
 }
 
-/* .skills img {
-  width: 10rem;
-} */
-
-.section-title {
-  text-align: center;
-  font-size: 3rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
-}
-
-/* .skills-info {
-  display: flex;
-  align-items: center;
-  gap: 5rem;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-} */
+/* ----------Skill section---------- */
 
 .skills-info {
   display: grid;
@@ -233,7 +224,7 @@ section {
   justify-content: center;
   align-items: center;
   text-align: center;
-  grid-gap: 2rem 4rem;
+  grid-gap: 4rem 8rem;
   padding: 1rem 80px;
   font-size: 1.2rem;
 }
@@ -260,9 +251,11 @@ section {
 }
 
 .skills-title h3 {
-  margin: 0.5rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
 }
 
+/* ----------Project section--------- */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -310,6 +303,7 @@ section {
   font-weight: 500;
 }
 
+/* ----------Contact section---------- */
 .input-box {
   display: flex;
   flex-direction: column;
@@ -343,6 +337,7 @@ section {
   transform: translate(50%, -50%);
 }
 
+/* ----------Footer section---------- */
 footer {
   bottom: 0;
   left: 0;
@@ -377,6 +372,7 @@ footer {
   background-color: black;
 }
 
+/* ----------Media section--------- */
 @media (max-width: 1280px) {
   header {
     padding: 1rem 2rem;
@@ -473,12 +469,26 @@ footer {
   .main-container img {
     width: 80vw;
   }
-  .about.about-text {
-    flex-direction: column;
-    font-size: 1.5rem;
+
+  .about-img img {
+    width: 45vw;
   }
-  .about-text img {
-    width: 80vw;
+  .about-text h2 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .about-text p {
+    font-size: 15px;
+  }
+  .about-info {
+    gap: 3rem;
+  }
+  .skills-info {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem 2rem;
+  }
+  .skills-title h3 {
+    font-size: 1.5rem;
   }
   .input-box input {
     padding: 0.5rem 3rem;
@@ -487,6 +497,10 @@ footer {
   }
   .input-box input::placeholder {
     font-size: 1.5rem;
+  }
+  .input ion-icon {
+    font-size: 2rem;
+    left: 2rem;
   }
   footer ul {
     gap: 1rem;
